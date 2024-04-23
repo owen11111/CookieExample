@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            let lightCSSUrl = "{{ url_for('static', filename='light.css') }}"
+            let darkCSSUrl = "{{ url_for('static', filename='dark.css') }}";
+        </script>
+        <script src="{{url_for('static', filename='main.js')}}" defer></script>
+        <link id="style" rel="stylesheet" href="{{url_for('static', filename='light.css')}}">
+    </head>
+    <body>
+        <button onclick="swapCSS()">Change Style</button>
+    </body>
+</html>
+
